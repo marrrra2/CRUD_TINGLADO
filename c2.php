@@ -13,7 +13,7 @@ $id_producto = trim($_POST['id_producto']);
 $nombre = trim($_POST['nombre']);
 $tipo = trim ($_POST['tipo']);
 $talla = trim ($_POST['talla']);
-$descripcion = trim ($_POST ['Descripcion'])
+$descripcion = trim ($_POST ['Descripcion']);
 $precio = trim ($_POST ['precio']);
 
 $clave_primaria = $id_producto;

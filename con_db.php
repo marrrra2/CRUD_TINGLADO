@@ -1,4 +1,3 @@
 <?php
-
-    $conexion = mysqli_connect("localhost","root","","crud_tinglado");
+    $conexion = mysqli_connect("localhost:3307","root","","crud_tinglado");
 ?>

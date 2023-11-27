@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
+
+ .cabecera  {
+    background-color: #333; 
+    color: #fff;
+    padding: 5px; 
+    display: flex;
+    align-items: center; 
+ } 
+
+  .logo{
+    max-width: auto;
+    max-height: auto; 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+.botonCabecera{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+  .redirect{
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #470d21; 
+    color: #fff; 
+    border-radius: 50%; 
+    text-align: center; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
+    margin-right: 100px;
+    
+  }
+.redirect a{
+  text-decoration: none;
+  color: white;
+}
+
+.redirect:hover {
+    background-color: #404142; 
+}
+
+.cuadrado{
+  display: inline-block;
+  padding: 10px 20px; 
+  background-color: #470d21; 
+  color: #fff; 
+  border: none; 
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0; 
+}
+
+.carrito{
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    background-color: #404142;
+    margin-top: 20px;
+}

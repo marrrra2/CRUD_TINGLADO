@@ -5,7 +5,7 @@ include("con_db.php");
 
 
 
-$id = $_POST['id'];
+$id_producto = $_POST['id_producto'];
 $nombre = $_POST['nombre'];
 $tipo = $_POST['tipo'];
 $talla = $_POST['talla'];
@@ -13,11 +13,12 @@ $descripcion = $_POST ['descripcion'];
 $precio = $_POST ['precio'];
 $existencias =  $_POST ['existencias'];
 
-$mandato = "UPDATE productos SET nombre='$nombre', tipo='$tipo', talla='$talla', descripcion='$descripcion', precio='$precio', existencias='$existencias' WHERE id_producto='$id'";
+
+$mandato = "UPDATE productos SET nombre='$nombre', tipo='$tipo', talla='$talla', descripcion='$descripcion', precio='$precio', existencias='$existencias' WHERE id_producto='$id_producto'";
 
 $resultado = mysqli_query ($conexion,$mandato);
 
-$resultado ? print "se ha actualizado" : print "xD";
+print "se ha actualizado";
 
 header("Refresh:1; URL:read.php");
 ?>

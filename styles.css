@@ -64,6 +64,9 @@ border-radius: 0;
 .cuadrado a{
   text-decoration: none;
   color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
   }
   
   .cuadrado:hover {
@@ -134,7 +137,7 @@ a img:hover {
 }
 
 
-.camisasImg>div{
+.camisasImg div{
   
     border-radius: 8px;
     width: auto;
@@ -144,10 +147,5 @@ a img:hover {
   
     display: grid;
     justify-content: center;
-    grid-template-columns: 
-    repeat(
-      auto_fit,
-      minmax(75px, 0,75fr)
-    );
  
 }

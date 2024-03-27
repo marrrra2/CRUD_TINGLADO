@@ -37,7 +37,8 @@
   text-align: center; 
   text-decoration: none; 
   transition: background-color 0.3s ease; 
-  margin-right: 200px;
+  margin-right: 100px;
+  margin-left: 200px;
   
 }
 .redirect a{
@@ -50,15 +51,17 @@ color: white;
 }
 
 .cuadrado{
-display: inline-block;
+display: flex;
+flex-direction: row;
+align-self: flex-end;
 padding: 10px 20px; 
 background-color: #470d21; 
 color: #fff; 
 border: none; 
-text-align: center;
 text-decoration: none;
 cursor: pointer;
 border-radius: 0; 
+margin-left: 700px;
 }
 
 .cuadrado a{

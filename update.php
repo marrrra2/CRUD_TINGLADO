@@ -12,7 +12,7 @@
         $sql = "SELECT * FROM productos WHERE id_producto = $id_producto";
         $resultado = mysqli_query($conexion,$sql);
         $mostrar = mysqli_fetch_array($resultado);
-        $id =$mostrar['id_producto'];
+        //$id =$mostrar['id_producto'];
     ?>
 
     <div class="container">
@@ -20,8 +20,9 @@
         <!-- VALUE: valor que procede de la Tabla COLORES, que entendermos 'por defecto' para cada campo -->
        
         <!-- Código será READONLY, no se puede cambiar -->
-        <input type="hidden" name="id" value='<php $id ?>'>
+        //input type="hidden" name="id" value='<php $id ?>'>
         <label>Nombre </label>
+        <input type="text" name="id_producto" value="<?php echo $mostrar['id_producto']?>"><br>
         <input type="text" name="nombre" value="<?php echo $mostrar['nombre']?>"><br>
         <input type="text" name="tipo" value="<?php echo $mostrar['tipo']?>"><br>
         <input type="text" name="talla" value="<?php echo $mostrar['talla']?>"><br>

@@ -18,7 +18,7 @@ $mandato = "UPDATE productos SET nombre='$nombre', tipo='$tipo', talla='$talla',
 
 $resultado = mysqli_query ($conexion,$mandato);
 
-print "se ha actualizado";
+//
 
-header("Refresh:1; URL:read.php");
+header("Refresh:1; url=read.php");
 ?>

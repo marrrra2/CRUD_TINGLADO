@@ -22,23 +22,22 @@ if (!isset($_SESSION['usuario'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-  <div class="cabecera">
+<div class="cabecera">
     <div class="logo">
       <a href="index.html"> <img src="./imagenes/logo-fotor-20230927172658.jpg "  alt="logo"  ></a>  
     </div>
 
-    <div class="botonCabecera">
-        <div class="redirect">
-                <a href="corbatas.html">CORBATAS</a>
-        </div >
-
-         <div class="redirect">
-            <a href="camisas.html"> CAMISAS</a>
-         </div >
-        <div class="redirect">
-            <a href="login.html" >Identificate</a>
-        </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Menu
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="corbatas.html">Corbatas</a>
+        <a class="dropdown-item" href="camisas.html">Camisas</a>
+        <a class="dropdown-item" href="login.html">Log in </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="novedades.php">Novedades</a>
+      </div>
     </div>
 </div>
 <html>

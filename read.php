@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD: LISTAR REGISTROS de ARTÍCULOS</title>
     <link rel="stylesheet" href="style.css">
-    <!-- LO LLAMAMOS DESDE EL ONCLICK DEL BOTÓN -->
-
-
-
 
 <body>
 
@@ -17,11 +13,11 @@
         $sql = "SELECT * FROM productos ORDER BY id_producto";
         $result = mysqli_query($conexion,$sql);
 
-        if (mysqli_num_rows($result)){          // SI HAY REGISTROS EN LA TABLA
+        if (mysqli_num_rows($result)){          
         echo "<table border='1' cellpadding='0' cellspacing='0' align='center'>";
          echo "<tr>";
          
-                echo "<th>id_producto</th>";         // CABECERA DE TABLA
+                echo "<th>id_producto</th>";   
                 echo "<th>nombre</th>";
                 echo "<th>tipo</th>";
                 echo "<th>talla</th>";
@@ -33,7 +29,7 @@
                 echo "<th>MODIFICAR</th>";
             echo "</tr><br>";
             while ($mostrar = mysqli_fetch_array($result) ) { 
-                echo "<tr>";                    // MOSTRAMOS REGISTROS
+                echo "<tr>";                  
                     echo "<td>".$mostrar['id_producto']."</td>";
                     echo "<td>".$mostrar['nombre']."</td>";
                     echo "<td>".$mostrar['tipo']."</td>";
@@ -47,7 +43,7 @@
                 }
         echo "</table>";
 
-        }else{                                  // TAL VEZ NO HAYA DATOS
+        }else{                                  
             echo "ATENCION, no hay registros para listar...";     
         }
         ?>

@@ -43,6 +43,6 @@ if (!isset($_SESSION['usuario'])) {
 <html>
 <body>
     <h1>Bienvenido, <?php echo $_SESSION['usuario']; ?>!</h1>
-    <p>Esta es una página protegida solo para usuarios registrados.</p>
+    <p>Esta es una página solo para usuarios registrados. Aqui podras visualizar todas nuestras novedades antes que nadie</p>
 </body>
 </html>

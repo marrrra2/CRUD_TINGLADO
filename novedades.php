@@ -27,22 +27,30 @@ if (!isset($_SESSION['usuario'])) {
       <a href="index.html"> <img src="./imagenes/logo-fotor-20230927172658.jpg "  alt="logo"  ></a>  
     </div>
 
-    <div class="btn-group">
-      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Menu
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="corbatas.html">Corbatas</a>
-        <a class="dropdown-item" href="camisas.html">Camisas</a>
-        <a class="dropdown-item" href="login.html">Log in </a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="novedades.php">Novedades</a>
-      </div>
+    <div class="cabecera">
+        <div class="logo">
+          <a href="index.html"> <img src="./imagenes/logo-fotor-20230927172658.jpg "  alt="logo"  ></a>  
+        </div>
+    
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="corbatas.html">Corbatas</a>
+            <a class="dropdown-item" href="camisas.html">Camisas</a>
+            <a class="dropdown-item" href="login.html">Log in </a>
+            <a class="dropdown-item" href="novedades.php">Novedades</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="privacidad.html">Politíca de privacidad</a>
+          </div>
+        </div>
     </div>
-</div>
 <html>
 <body>
     <h1>Bienvenido, <?php echo $_SESSION['usuario']; ?>!</h1>
     <p>Esta es una página solo para usuarios registrados. Aqui podras visualizar todas nuestras novedades antes que nadie</p>
+    <p>De momento no tenemos ninguna novedad para ofrecerle, pero estese al tanto. 
+  </p>
 </body>
 </html>
